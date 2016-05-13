@@ -5,9 +5,9 @@
 	- [最好的练习](#最好的练习)
 	- [严格模式](#严格模式)
 	- [变量](#变量)
-	- [Node.js和CommonJS](#Node.js和CommonJS)
+	- [Node.js和CommonJS](#Nodejs和CommonJS)
 	- [代码风格](#代码风格)
-	- [ECMAScript6(ES2015)](#ECMAScript6(ES2015))
+	- [ECMAScript6(ES2015)](#ECMAScript6)
 	- [被移除的](#被移除的)
 - ESLint插件
 	- [eslint-plugin-angular](plugins/eslint-plugin-angular-rules.md)	
@@ -207,7 +207,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 - [no-use-before-define](http://eslint.org/docs/rules/no-use-before-define)：变量应该先定义后使用。
 	- `"nofunc"`：函数可以在起定义之前调用。但用法必须是`function foo(){}`，而不能是`var foo = function(){};`。
 
-## <span id="Node.js和CommonJS">Node.js和CommonJS</span>
+## <span id="Nodejs和CommonJS">Node.js和CommonJS</span>
 这些规则是特定应用于运行在Node.js或者浏览器中CommonJS规范的代码。
 
 - [callback-return](http://eslint.org/docs/rules/callback-return)：执行`callback`回调函数的时候必须使用`return`，函数最后调用回调函数的不需要添加`return`。
@@ -530,7 +530,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	```
 - [wrap-regex](http://eslint.org/docs/rules/wrap-regex)：要求在正则表达式的双斜杠外面加一个圆括号，来消除歧义。如`/foo/.test("bar")`是不合法的，必须是`(/foo/).test("bar")`。
 
-## <span id="ECMAScript6(ES2015)">ECMAScript6(ES2015)</span>
+## <span id="ECMAScript6">ECMAScript6(ES2015)</span>
 下列的规则都是和ES6语法相关的规则。		
 
 - [arrow-body-style](http://eslint.org/docs/rules/arrow-body-style)：箭头函数的函数体必须使用`{}`包括。
