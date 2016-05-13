@@ -5,21 +5,21 @@
 	- [最好的练习](#最好的练习)
 	- [严格模式](#严格模式)
 	- [变量](#变量)
-	- [Node.js和CommonJS](#Nodejs和CommonJS)
+	- [Node.js和CommonJS](#nodejs和commonjs)
 	- [代码风格](#代码风格)
-	- [ECMAScript6(ES2015)](#ECMAScript6)
+	- [ECMAScript6(ES2015)](#ecmascript6es2015)
 	- [被移除的](#被移除的)
 - ESLint插件
 	- [eslint-plugin-angular](plugins/eslint-plugin-angular-rules.md)	
 
-## <span id="规则说明">规则说明</span>
+## 规则说明
 ESLint中的规则被分为了多个种类，以便于你能够更好地理解这些规则。所有的规则默认都是不启用的。ESLint推荐给大家一套常用规则来发现比较常见的问题，而且你可以直接在你的配置文件中的`extends`选项下配置`"eslint:recommended"`值，这些被建议的规则就可以直接使用了。下面列出的规则中，指明了含有`(推荐)`的规则，都是在继承了`eslint:recommended`之后会被启用的规则。  
 有一些规则是可修复的规则，表示如果在命令行中使用`--fix`参数的话，那么ESLint会自动修复这些规则所描述的问题。下面列出的规则中标注有`(可修复)`的表示此类规则。  
 
 *注：规则说明下面如果有列表项的话，表示该规则可以使用的选项。除个别情况（valid-jsdoc等）外，大部分规则只可以使用一个选项。*  
 **用前须知：本人英语和语文处于小学5年级水平!**
 
-## <span id="常见错误">常见错误</span>
+## 常见错误
 下面列出的规则指出了你可能出现问题的地方。  
 
 - [comma-dangle](http://eslint.org/docs/rules/comma-dangle)：不允许或强制在对象字面量或者数组属性的结尾使用逗号。(__推荐__)
@@ -66,7 +66,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	- `"requireReturnType"`：必须为`@return`指定类型。
 - [valid-typeof](http://eslint.org/docs/rules/valid-typeof)：`typeof`的结果必须和一个有效的字符串进行比较，如`typeof foo === 'strnig'`即是不合法的字符串。(__推荐__)
 
-## <span id="最好的练习">最好的练习</span>
+## 最好的练习
 设计的这些规则都是阻止你犯错的。下面的规则要么是提出一种更好的实践，要么避免出现错误。
 
 - [accessor-pairs](http://eslint.org/docs/rules/accessor-pairs)：在对象中`getter `和`setter`应该成对出现。
@@ -162,7 +162,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	- `"exceptRange"`：设置为`true`时，表示范围判断的不需要遵守左右。
 	- `"onlyEquality"`：设置为`true`时，表示只有当等于判断时才需要遵守左右。
 
-## <span id="严格模式">严格模式</span>
+## 严格模式
 这些规则和严格模式有关系。
 
 - [strict](http://eslint.org/docs/rules/strict)：在文件头部或者函数的开始部分使用`"use strict";` 即可开启严格模式。
@@ -170,7 +170,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	- `"global"`：只允许在全局使用严格模式。
 	- `"function"`：只允许在函数开始部分使用严格模式。
 
-## <span id="变量">变量</span> 
+## 变量 
 这些规则主要是和变量声明有关的。
 
 - [init-declarations](http://eslint.org/docs/rules/init-declarations)：指定变量在定义的时候是否要赋值。
@@ -207,7 +207,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 - [no-use-before-define](http://eslint.org/docs/rules/no-use-before-define)：变量应该先定义后使用。
 	- `"nofunc"`：函数可以在起定义之前调用。但用法必须是`function foo(){}`，而不能是`var foo = function(){};`。
 
-## <span id="Nodejs和CommonJS">Node.js和CommonJS</span>
+## Node.js和CommonJS
 这些规则是特定应用于运行在Node.js或者浏览器中CommonJS规范的代码。
 
 - [callback-return](http://eslint.org/docs/rules/callback-return)：执行`callback`回调函数的时候必须使用`return`，函数最后调用回调函数的不需要添加`return`。
@@ -224,7 +224,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	- `[]`：被限制的模块名称数组。如`['fs','path']`。
 - [no-sync](http://eslint.org/docs/rules/no-sync)：不允许使用同步方法，如`fs.readFileSync()`等。
 
-## <span id="代码风格">代码风格</span>
+## 代码风格
 这些规则是纯粹的风格化，使用因人而异。
 
 - [array-bracket-spacing](http://eslint.org/docs/rules/array-bracket-spacing)：数组的`[`之后和`]`之前是否有空格。(__可修复__)
@@ -530,7 +530,7 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 	```
 - [wrap-regex](http://eslint.org/docs/rules/wrap-regex)：要求在正则表达式的双斜杠外面加一个圆括号，来消除歧义。如`/foo/.test("bar")`是不合法的，必须是`(/foo/).test("bar")`。
 
-## <span id="ECMAScript6">ECMAScript6(ES2015)</span>
+## ECMAScript6(ES2015)
 下列的规则都是和ES6语法相关的规则。		
 
 - [arrow-body-style](http://eslint.org/docs/rules/arrow-body-style)：箭头函数的函数体必须使用`{}`包括。
@@ -576,6 +576,6 @@ ESLint中的规则被分为了多个种类，以便于你能够更好地理解�
 - [prefer-template](http://eslint.org/docs/rules/prefer-template)：建议使用模板字符串处理字符串拼接。
 - [require-yield](http://eslint.org/docs/rules/require-yield)：`generates`函数中必须有`yield`。
 
-## <span id="被移除的">被移除的</span>
+## 被移除的
 这些规则在早起的ESLint版本中使用，但是现在都有新的规则作为替代。
 因为已经被移除了，所以没有罗列，可以去官网[查看](http://eslint.org/docs/rules/#removed)。
