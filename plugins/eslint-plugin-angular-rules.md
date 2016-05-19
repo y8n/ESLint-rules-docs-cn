@@ -47,7 +47,7 @@ eslint-plugin-angular中的规则分成了多个不同的分类，能帮助你�
 这些规则帮助你避免使用Angular中已经弃用的属性。
 
 - [no-cookiestore](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/no-cookiestore.md)：在Angular1.4中，`$cookieStore`这个service已经被弃用了，取而代之的是`$cookies`。
-- [no-directive-replace](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/no-directive-replace.md)：1.3之后的版本中，定义指令的时候不允许使用`replae`属性。
+- [no-directive-replace](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/no-directive-replace.md)：1.3之后的版本中，定义指令的时候不允许使用`replace`属性。
 	- `ignoreReplaceFalse`：默认为`false`，指明当`replace`设置为`false`的时候是否忽略该属性。
 - [no-http-callback](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/no-http-callback.md)：不允许使用`$http`方法返回的`Promise`的`success`和`error`方法，应该使用标准的`promise`API，即`then`。
 
