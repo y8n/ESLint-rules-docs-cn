@@ -150,9 +150,9 @@ Angular会为一种实现提供多种不同的方法，这些规则帮助你在�
 - [typecheck-array](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-array.md)：判断一个值是否是数组的时候使用`angular.isArray()`
 - [typecheck-date](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-date.md)：判断一个值是否是日期对象的时候使用`angular.isDate()`
 - [typecheck-function](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-function.md)：判断一个值是否是函数的时候使用`angular.isFunction()`
-- [typecheck-number](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-number.md)：判断一个值是否是数字的时候使用`angular.isArray()`
-- [typecheck-object](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-object.md)：判断一个值是否是对象的时候使用`angular.isArray()`
-- [typecheck-string](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-string.md)：判断一个值是否是字符串的时候使用`angular.isArray()`
+- [typecheck-number](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-number.md)：判断一个值是否是数字的时候使用`angular.isNumber()`
+- [typecheck-object](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-object.md)：判断一个值是否是对象的时候使用`angular.isObject()`
+- [typecheck-string](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/typecheck-string.md)：判断一个值是否是字符串的时候使用`angular.isString()`
 - [window-service](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/window-service.md)：使用`$window`代替`window`
 
 # 参考资料 #
