@@ -1,4 +1,6 @@
 # [ESLint-angular-rules](https://github.com/Gillespie59/eslint-plugin-angular) #
+
+
 eslint-plugin-angular中的规则分成了多个不同的分类，能帮助你更好的理解他们代表的含义。
 
 ### 可能的错误
